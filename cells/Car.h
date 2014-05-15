@@ -13,11 +13,13 @@
 @property (nonatomic, copy) NSNumber *year;
 @property (nonatomic, copy) NSString *make;
 @property (nonatomic, copy) NSString *modal;
+@property (nonatomic, copy) NSString *desc;
 @property (nonatomic, copy) NSString *imageNamed;
 
 + (Car *)carWithYear:(NSNumber *)year
                 make:(NSString *)make
                modal:(NSString *)modal
+                desc:(NSString *)desc
           imageNamed:(NSString *)imageNamed;
 
 @end

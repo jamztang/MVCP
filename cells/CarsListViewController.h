@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CarsViewController : UITableViewController
+@interface CarsListViewController : UITableViewController
 
 @end

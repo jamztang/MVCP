@@ -9,9 +9,24 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>universalTableView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1A6418701924BBD3000E9F30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1A64188C1924BBD4000E9F30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1A9C70E61920E47A008CFDFF</key>
 		<dict>
 			<key>primary</key>

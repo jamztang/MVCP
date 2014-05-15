@@ -13,11 +13,13 @@
 + (Car *)carWithYear:(NSNumber *)year
                 make:(NSString *)make
                modal:(NSString *)modal
+                desc:(NSString *)desc
           imageNamed:(NSString *)imageNamed {
     Car *car = [[Car alloc] init];
     car.year = year;
     car.make = make;
     car.modal = modal;
+    car.desc = desc;
     car.imageNamed = imageNamed;
     return car;
 }

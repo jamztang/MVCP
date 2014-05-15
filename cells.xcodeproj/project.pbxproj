@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A6418721924BBD3000E9F30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EA1920E47A008CFDFF /* Foundation.framework */; };
+		1A6418731924BBD3000E9F30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EC1920E47A008CFDFF /* CoreGraphics.framework */; };
+		1A6418741924BBD3000E9F30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EE1920E47A008CFDFF /* UIKit.framework */; };
+		1A64187A1924BBD3000E9F30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A6418781924BBD3000E9F30 /* InfoPlist.strings */; };
+		1A64187C1924BBD3000E9F30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A64187B1924BBD3000E9F30 /* main.m */; };
+		1A6418801924BBD4000E9F30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A64187F1924BBD4000E9F30 /* AppDelegate.m */; };
+		1A6418831924BBD4000E9F30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6418811924BBD4000E9F30 /* Main.storyboard */; };
+		1A6418881924BBD4000E9F30 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6418871924BBD4000E9F30 /* Images.xcassets */; };
+		1A6418A11924BC40000E9F30 /* CarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C71251920E72E008CFDFF /* CarTableViewCell.m */; };
+		1A6418A31924BC44000E9F30 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C71201920E4F4008CFDFF /* Car.m */; };
+		1A6418A71924BD66000E9F30 /* CarTableViewCell+Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6418A61924BD66000E9F30 /* CarTableViewCell+Car.m */; };
+		1A6418A81924BD66000E9F30 /* CarTableViewCell+Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6418A61924BD66000E9F30 /* CarTableViewCell+Car.m */; };
+		1A6418AB1924BDC7000E9F30 /* CarsPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6418AA1924BDC7000E9F30 /* CarsPhotoViewController.m */; };
 		1A9C70EB1920E47A008CFDFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EA1920E47A008CFDFF /* Foundation.framework */; };
 		1A9C70ED1920E47A008CFDFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EC1920E47A008CFDFF /* CoreGraphics.framework */; };
 		1A9C70EF1920E47A008CFDFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EE1920E47A008CFDFF /* UIKit.framework */; };
@@ -14,30 +27,30 @@
 		1A9C70F71920E47A008CFDFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C70F61920E47A008CFDFF /* main.m */; };
 		1A9C70FB1920E47A008CFDFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C70FA1920E47A008CFDFF /* AppDelegate.m */; };
 		1A9C70FE1920E47A008CFDFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C70FC1920E47A008CFDFF /* Main.storyboard */; };
-		1A9C71011920E47A008CFDFF /* CarsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C71001920E47A008CFDFF /* CarsViewController.m */; };
+		1A9C71011920E47A008CFDFF /* CarsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C71001920E47A008CFDFF /* CarsListViewController.m */; };
 		1A9C71031920E47A008CFDFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71021920E47A008CFDFF /* Images.xcassets */; };
-		1A9C710A1920E47A008CFDFF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C71091920E47A008CFDFF /* XCTest.framework */; };
-		1A9C710B1920E47A008CFDFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EA1920E47A008CFDFF /* Foundation.framework */; };
-		1A9C710C1920E47A008CFDFF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EE1920E47A008CFDFF /* UIKit.framework */; };
-		1A9C71141920E47A008CFDFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71121920E47A008CFDFF /* InfoPlist.strings */; };
-		1A9C71161920E47A008CFDFF /* cellsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C71151920E47A008CFDFF /* cellsTests.m */; };
 		1A9C71211920E4F4008CFDFF /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C71201920E4F4008CFDFF /* Car.m */; };
 		1A9C71261920E72E008CFDFF /* CarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C71251920E72E008CFDFF /* CarTableViewCell.m */; };
 		1A9C712A1920E8E9008CFDFF /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71281920E8E9008CFDFF /* tesla.jpg */; };
 		1A9C712B1920E8E9008CFDFF /* mini-cooper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71291920E8E9008CFDFF /* mini-cooper.jpg */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		1A9C710D1920E47A008CFDFF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1A9C70DF1920E47A008CFDFF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A9C70E61920E47A008CFDFF;
-			remoteInfo = cells;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		1A6418711924BBD3000E9F30 /* universalTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = universalTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A6418771924BBD3000E9F30 /* universalTableView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "universalTableView-Info.plist"; sourceTree = "<group>"; };
+		1A6418791924BBD3000E9F30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A64187B1924BBD3000E9F30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A64187D1924BBD3000E9F30 /* universalTableView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "universalTableView-Prefix.pch"; sourceTree = "<group>"; };
+		1A64187E1924BBD3000E9F30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1A64187F1924BBD4000E9F30 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1A6418821924BBD4000E9F30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A6418841924BBD4000E9F30 /* CarsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarsListViewController.h; sourceTree = "<group>"; };
+		1A6418851924BBD4000E9F30 /* CarsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarsListViewController.m; sourceTree = "<group>"; };
+		1A6418871924BBD4000E9F30 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1A6418A51924BD66000E9F30 /* CarTableViewCell+Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CarTableViewCell+Car.h"; sourceTree = "<group>"; };
+		1A6418A61924BD66000E9F30 /* CarTableViewCell+Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CarTableViewCell+Car.m"; sourceTree = "<group>"; };
+		1A6418A91924BDC7000E9F30 /* CarsPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarsPhotoViewController.h; sourceTree = "<group>"; };
+		1A6418AA1924BDC7000E9F30 /* CarsPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarsPhotoViewController.m; sourceTree = "<group>"; };
 		1A9C70E71920E47A008CFDFF /* cells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cells.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9C70EA1920E47A008CFDFF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A9C70EC1920E47A008CFDFF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,10 +62,9 @@
 		1A9C70F91920E47A008CFDFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1A9C70FA1920E47A008CFDFF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1A9C70FD1920E47A008CFDFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1A9C70FF1920E47A008CFDFF /* CarsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarsViewController.h; sourceTree = "<group>"; };
-		1A9C71001920E47A008CFDFF /* CarsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarsViewController.m; sourceTree = "<group>"; };
+		1A9C70FF1920E47A008CFDFF /* CarsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarsListViewController.h; sourceTree = "<group>"; };
+		1A9C71001920E47A008CFDFF /* CarsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarsListViewController.m; sourceTree = "<group>"; };
 		1A9C71021920E47A008CFDFF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1A9C71081920E47A008CFDFF /* cellsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cellsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9C71091920E47A008CFDFF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1A9C71111920E47A008CFDFF /* cellsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cellsTests-Info.plist"; sourceTree = "<group>"; };
 		1A9C71131920E47A008CFDFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -66,6 +78,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1A64186E1924BBD3000E9F30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A6418731924BBD3000E9F30 /* CoreGraphics.framework in Frameworks */,
+				1A6418741924BBD3000E9F30 /* UIKit.framework in Frameworks */,
+				1A6418721924BBD3000E9F30 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1A9C70E41920E47A008CFDFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,24 +98,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A9C71051920E47A008CFDFF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A9C710A1920E47A008CFDFF /* XCTest.framework in Frameworks */,
-				1A9C710C1920E47A008CFDFF /* UIKit.framework in Frameworks */,
-				1A9C710B1920E47A008CFDFF /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A6418751924BBD3000E9F30 /* universalTableView */ = {
+			isa = PBXGroup;
+			children = (
+				1A64187E1924BBD3000E9F30 /* AppDelegate.h */,
+				1A64187F1924BBD4000E9F30 /* AppDelegate.m */,
+				1A6418811924BBD4000E9F30 /* Main.storyboard */,
+				1A6418841924BBD4000E9F30 /* CarsListViewController.h */,
+				1A6418851924BBD4000E9F30 /* CarsListViewController.m */,
+				1A6418871924BBD4000E9F30 /* Images.xcassets */,
+				1A6418761924BBD3000E9F30 /* Supporting Files */,
+			);
+			path = universalTableView;
+			sourceTree = "<group>";
+		};
+		1A6418761924BBD3000E9F30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A6418771924BBD3000E9F30 /* universalTableView-Info.plist */,
+				1A6418781924BBD3000E9F30 /* InfoPlist.strings */,
+				1A64187B1924BBD3000E9F30 /* main.m */,
+				1A64187D1924BBD3000E9F30 /* universalTableView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		1A9C70DE1920E47A008CFDFF = {
 			isa = PBXGroup;
 			children = (
 				1A9C70F01920E47A008CFDFF /* cells */,
 				1A9C710F1920E47A008CFDFF /* cellsTests */,
+				1A6418751924BBD3000E9F30 /* universalTableView */,
 				1A9C70E91920E47A008CFDFF /* Frameworks */,
 				1A9C70E81920E47A008CFDFF /* Products */,
 			);
@@ -103,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				1A9C70E71920E47A008CFDFF /* cells.app */,
-				1A9C71081920E47A008CFDFF /* cellsTests.xctest */,
+				1A6418711924BBD3000E9F30 /* universalTableView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,6 +208,8 @@
 			children = (
 				1A9C711F1920E4F4008CFDFF /* Car.h */,
 				1A9C71201920E4F4008CFDFF /* Car.m */,
+				1A6418A51924BD66000E9F30 /* CarTableViewCell+Car.h */,
+				1A6418A61924BD66000E9F30 /* CarTableViewCell+Car.m */,
 			);
 			name = Modal;
 			sourceTree = "<group>";
@@ -177,8 +217,10 @@
 		1A9C71231920E5F3008CFDFF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1A9C70FF1920E47A008CFDFF /* CarsViewController.h */,
-				1A9C71001920E47A008CFDFF /* CarsViewController.m */,
+				1A6418A91924BDC7000E9F30 /* CarsPhotoViewController.h */,
+				1A6418AA1924BDC7000E9F30 /* CarsPhotoViewController.m */,
+				1A9C70FF1920E47A008CFDFF /* CarsListViewController.h */,
+				1A9C71001920E47A008CFDFF /* CarsListViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -195,6 +237,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1A6418701924BBD3000E9F30 /* universalTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A64189F1924BBD4000E9F30 /* Build configuration list for PBXNativeTarget "universalTableView" */;
+			buildPhases = (
+				1A64186D1924BBD3000E9F30 /* Sources */,
+				1A64186E1924BBD3000E9F30 /* Frameworks */,
+				1A64186F1924BBD3000E9F30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = universalTableView;
+			productName = universalTableView;
+			productReference = 1A6418711924BBD3000E9F30 /* universalTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
 		1A9C70E61920E47A008CFDFF /* cells */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A9C71191920E47A008CFDFF /* Build configuration list for PBXNativeTarget "cells" */;
@@ -212,24 +271,6 @@
 			productReference = 1A9C70E71920E47A008CFDFF /* cells.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1A9C71071920E47A008CFDFF /* cellsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A9C711C1920E47A008CFDFF /* Build configuration list for PBXNativeTarget "cellsTests" */;
-			buildPhases = (
-				1A9C71041920E47A008CFDFF /* Sources */,
-				1A9C71051920E47A008CFDFF /* Frameworks */,
-				1A9C71061920E47A008CFDFF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1A9C710E1920E47A008CFDFF /* PBXTargetDependency */,
-			);
-			name = cellsTests;
-			productName = cellsTests;
-			productReference = 1A9C71081920E47A008CFDFF /* cellsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -238,11 +279,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "James Tang";
-				TargetAttributes = {
-					1A9C71071920E47A008CFDFF = {
-						TestTargetID = 1A9C70E61920E47A008CFDFF;
-					};
-				};
 			};
 			buildConfigurationList = 1A9C70E21920E47A008CFDFF /* Build configuration list for PBXProject "cells" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -258,12 +294,22 @@
 			projectRoot = "";
 			targets = (
 				1A9C70E61920E47A008CFDFF /* cells */,
-				1A9C71071920E47A008CFDFF /* cellsTests */,
+				1A6418701924BBD3000E9F30 /* universalTableView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1A64186F1924BBD3000E9F30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A6418881924BBD4000E9F30 /* Images.xcassets in Resources */,
+				1A64187A1924BBD3000E9F30 /* InfoPlist.strings in Resources */,
+				1A6418831924BBD4000E9F30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1A9C70E51920E47A008CFDFF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,48 +322,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A9C71061920E47A008CFDFF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A9C71141920E47A008CFDFF /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1A64186D1924BBD3000E9F30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A6418A31924BC44000E9F30 /* Car.m in Sources */,
+				1A6418A81924BD66000E9F30 /* CarTableViewCell+Car.m in Sources */,
+				1A6418801924BBD4000E9F30 /* AppDelegate.m in Sources */,
+				1A6418A11924BC40000E9F30 /* CarTableViewCell.m in Sources */,
+				1A64187C1924BBD3000E9F30 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1A9C70E31920E47A008CFDFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1A9C71261920E72E008CFDFF /* CarTableViewCell.m in Sources */,
-				1A9C71011920E47A008CFDFF /* CarsViewController.m in Sources */,
+				1A6418A71924BD66000E9F30 /* CarTableViewCell+Car.m in Sources */,
+				1A6418AB1924BDC7000E9F30 /* CarsPhotoViewController.m in Sources */,
+				1A9C71011920E47A008CFDFF /* CarsListViewController.m in Sources */,
 				1A9C70FB1920E47A008CFDFF /* AppDelegate.m in Sources */,
 				1A9C71211920E4F4008CFDFF /* Car.m in Sources */,
 				1A9C70F71920E47A008CFDFF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A9C71041920E47A008CFDFF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A9C71161920E47A008CFDFF /* cellsTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		1A9C710E1920E47A008CFDFF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1A9C70E61920E47A008CFDFF /* cells */;
-			targetProxy = 1A9C710D1920E47A008CFDFF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
+		1A6418781924BBD3000E9F30 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A6418791924BBD3000E9F30 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1A6418811924BBD4000E9F30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A6418821924BBD4000E9F30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		1A9C70F31920E47A008CFDFF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -345,6 +397,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1A64189B1924BBD4000E9F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "universalTableView/universalTableView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "universalTableView/universalTableView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1A64189C1924BBD4000E9F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "universalTableView/universalTableView-Prefix.pch";
+				INFOPLIST_FILE = "universalTableView/universalTableView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		1A9C71171920E47A008CFDFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -441,49 +523,17 @@
 			};
 			name = Release;
 		};
-		1A9C711D1920E47A008CFDFF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cells.app/cells";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cells/cells-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "cellsTests/cellsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		1A9C711E1920E47A008CFDFF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cells.app/cells";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "cells/cells-Prefix.pch";
-				INFOPLIST_FILE = "cellsTests/cellsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1A64189F1924BBD4000E9F30 /* Build configuration list for PBXNativeTarget "universalTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A64189B1924BBD4000E9F30 /* Debug */,
+				1A64189C1924BBD4000E9F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1A9C70E21920E47A008CFDFF /* Build configuration list for PBXProject "cells" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -500,14 +550,7 @@
 				1A9C711B1920E47A008CFDFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		1A9C711C1920E47A008CFDFF /* Build configuration list for PBXNativeTarget "cellsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A9C711D1920E47A008CFDFF /* Debug */,
-				1A9C711E1920E47A008CFDFF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
