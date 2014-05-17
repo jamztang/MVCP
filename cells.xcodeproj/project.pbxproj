@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A14F783192732240050422D /* CarsPhotoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A14F782192732240050422D /* CarsPhotoTableViewController.m */; };
+		1A14F784192733340050422D /* CarsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6418851924BBD4000E9F30 /* CarsListViewController.m */; };
+		1A14F7871927388D0050422D /* CarsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A14F7861927388D0050422D /* CarsTableViewController.m */; };
+		1A14F78919273A860050422D /* CarListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A14F78819273A860050422D /* CarListTableViewCell.xib */; };
+		1A14F78B19273ABE0050422D /* CarPhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A14F78A19273ABE0050422D /* CarPhotoTableViewCell.xib */; };
+		1A14F78C19273CD30050422D /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71281920E8E9008CFDFF /* tesla.jpg */; };
+		1A14F78D19273CD30050422D /* mini-cooper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71291920E8E9008CFDFF /* mini-cooper.jpg */; };
 		1A6418721924BBD3000E9F30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EA1920E47A008CFDFF /* Foundation.framework */; };
 		1A6418731924BBD3000E9F30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EC1920E47A008CFDFF /* CoreGraphics.framework */; };
 		1A6418741924BBD3000E9F30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EE1920E47A008CFDFF /* UIKit.framework */; };
@@ -36,6 +43,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A14F781192732240050422D /* CarsPhotoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarsPhotoTableViewController.h; sourceTree = "<group>"; };
+		1A14F782192732240050422D /* CarsPhotoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarsPhotoTableViewController.m; sourceTree = "<group>"; };
+		1A14F7851927388D0050422D /* CarsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarsTableViewController.h; sourceTree = "<group>"; };
+		1A14F7861927388D0050422D /* CarsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarsTableViewController.m; sourceTree = "<group>"; };
+		1A14F78819273A860050422D /* CarListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarListTableViewCell.xib; sourceTree = "<group>"; };
+		1A14F78A19273ABE0050422D /* CarPhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarPhotoTableViewCell.xib; sourceTree = "<group>"; };
 		1A6418711924BBD3000E9F30 /* universalTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = universalTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6418771924BBD3000E9F30 /* universalTableView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "universalTableView-Info.plist"; sourceTree = "<group>"; };
 		1A6418791924BBD3000E9F30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -109,8 +122,14 @@
 				1A6418811924BBD4000E9F30 /* Main.storyboard */,
 				1A6418841924BBD4000E9F30 /* CarsListViewController.h */,
 				1A6418851924BBD4000E9F30 /* CarsListViewController.m */,
+				1A14F781192732240050422D /* CarsPhotoTableViewController.h */,
+				1A14F782192732240050422D /* CarsPhotoTableViewController.m */,
 				1A6418871924BBD4000E9F30 /* Images.xcassets */,
 				1A6418761924BBD3000E9F30 /* Supporting Files */,
+				1A14F7851927388D0050422D /* CarsTableViewController.h */,
+				1A14F7861927388D0050422D /* CarsTableViewController.m */,
+				1A14F78819273A860050422D /* CarListTableViewCell.xib */,
+				1A14F78A19273ABE0050422D /* CarPhotoTableViewCell.xib */,
 			);
 			path = universalTableView;
 			sourceTree = "<group>";
@@ -305,8 +324,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A6418881924BBD4000E9F30 /* Images.xcassets in Resources */,
+				1A14F78B19273ABE0050422D /* CarPhotoTableViewCell.xib in Resources */,
 				1A64187A1924BBD3000E9F30 /* InfoPlist.strings in Resources */,
+				1A14F78919273A860050422D /* CarListTableViewCell.xib in Resources */,
 				1A6418831924BBD4000E9F30 /* Main.storyboard in Resources */,
+				1A14F78C19273CD30050422D /* tesla.jpg in Resources */,
+				1A14F78D19273CD30050422D /* mini-cooper.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,8 +352,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A14F784192733340050422D /* CarsListViewController.m in Sources */,
 				1A6418A31924BC44000E9F30 /* Car.m in Sources */,
+				1A14F783192732240050422D /* CarsPhotoTableViewController.m in Sources */,
 				1A6418A81924BD66000E9F30 /* CarTableViewCell+Car.m in Sources */,
+				1A14F7871927388D0050422D /* CarsTableViewController.m in Sources */,
 				1A6418801924BBD4000E9F30 /* AppDelegate.m in Sources */,
 				1A6418A11924BC40000E9F30 /* CarTableViewCell.m in Sources */,
 				1A64187C1924BBD3000E9F30 /* main.m in Sources */,
@@ -533,6 +559,7 @@
 				1A64189C1924BBD4000E9F30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A9C70E21920E47A008CFDFF /* Build configuration list for PBXProject "cells" */ = {
 			isa = XCConfigurationList;

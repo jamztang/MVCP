@@ -13,13 +13,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>
-                            <outlet property="dataSource" destination="ptb-9X-Dr6" id="YLw-I8-U1T"/>
-                            <outlet property="delegate" destination="ptb-9X-Dr6" id="gWx-hq-AF1"/>
+                            <outlet property="dataSource" destination="mJk-fd-noz" id="MSW-vD-cZA"/>
+                            <outlet property="delegate" destination="mJk-fd-noz" id="nZl-bI-acV"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="List" id="Q3M-9i-7UQ"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableViewController" destination="mJk-fd-noz" id="TOX-aC-oah"/>
+                    </connections>
                 </tableViewController>
+                <customObject id="mJk-fd-noz" customClass="CarsTableViewController">
+                    <connections>
+                        <outlet property="tableView" destination="wI2-5p-L5f" id="WpA-au-nnD"/>
+                    </connections>
+                </customObject>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ueg-ap-c5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1080" y="-219"/>
@@ -62,134 +70,32 @@
             </objects>
             <point key="canvasLocation" x="149" y="115"/>
         </scene>
-        <!--Cars List View Controller - Photos-->
+        <!--Cars Photo Table View Controller - Photos-->
         <scene sceneID="DuA-SQ-GCz">
             <objects>
-                <tableViewController id="WeU-uf-Zsp" customClass="CarsListViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="baseCarsViewController" id="WeU-uf-Zsp" customClass="CarsPhotoTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="22" sectionFooterHeight="22" id="JkI-PX-tR3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="carPhotoCell" id="A9p-fi-QK9" customClass="CarTableViewCell">
-                                <rect key="frame" x="0.0" y="86" width="320" height="200"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A9p-fi-QK9" id="0de-ds-BpT">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="McJ-jl-FqB">
-                                            <rect key="frame" x="0.0" y="-22" width="320" height="221"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        </imageView>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tGd-uD-NeG">
-                                            <rect key="frame" x="0.0" y="155" width="320" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="308" translatesAutoresizingMaskIntoConstraints="NO" id="D8J-Sb-h7r">
-                                                    <rect key="frame" x="7" y="5" width="308" height="34"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="McJ-jl-FqB" secondAttribute="trailing" id="fUq-Wm-AEX"/>
-                                        <constraint firstItem="McJ-jl-FqB" firstAttribute="leading" secondItem="0de-ds-BpT" secondAttribute="leading" id="lzk-jG-itb"/>
-                                        <constraint firstAttribute="bottom" secondItem="McJ-jl-FqB" secondAttribute="bottom" id="xEk-cr-aWR"/>
-                                        <constraint firstItem="McJ-jl-FqB" firstAttribute="top" secondItem="0de-ds-BpT" secondAttribute="top" constant="-22" id="yAr-i4-ce7"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="descLabel" destination="D8J-Sb-h7r" id="OD7-jk-9gH"/>
-                                    <outlet property="frontImageView" destination="McJ-jl-FqB" id="6bW-Zr-KXz"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="carListCell" rowHeight="101" id="kdj-vo-4nd" customClass="CarTableViewCell">
-                                <rect key="frame" x="0.0" y="286" width="320" height="101"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kdj-vo-4nd" id="DAx-oy-niy">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xgr-FR-8A0">
-                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="100" id="Yci-AJ-lGG"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Make" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zz-Er-uKb">
-                                            <rect key="frame" x="160" y="13" width="140" height="19"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Year" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hU-3V-PmD">
-                                            <rect key="frame" x="160" y="69" width="140" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Modal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SW6-Ay-Zei">
-                                            <rect key="frame" x="160" y="41" width="140" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Make" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yT7-tK-1kH">
-                                            <rect key="frame" x="105" y="13" width="50" height="19"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Year" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMM-N1-yg4">
-                                            <rect key="frame" x="105" y="69" width="50" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Modal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyx-y9-K3N">
-                                            <rect key="frame" x="105" y="41" width="50" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Xgr-FR-8A0" firstAttribute="top" secondItem="DAx-oy-niy" secondAttribute="top" id="LZ3-EA-rDx"/>
-                                        <constraint firstItem="Xgr-FR-8A0" firstAttribute="leading" secondItem="DAx-oy-niy" secondAttribute="leading" id="ZE8-f8-DZL"/>
-                                        <constraint firstAttribute="bottom" secondItem="Xgr-FR-8A0" secondAttribute="bottom" id="wP3-10-0yj"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="frontImageView" destination="Xgr-FR-8A0" id="S5p-Qv-Byh"/>
-                                    <outlet property="makeLabel" destination="4Zz-Er-uKb" id="Aaf-tX-uLj"/>
-                                    <outlet property="modalLabel" destination="SW6-Ay-Zei" id="1cq-JU-gC4"/>
-                                    <outlet property="yearLabel" destination="0hU-3V-PmD" id="a6U-Aw-mCf"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="WeU-uf-Zsp" id="h9g-Ul-hWI"/>
-                            <outlet property="delegate" destination="WeU-uf-Zsp" id="d0G-wq-bcd"/>
+                            <outlet property="dataSource" destination="DWx-kZ-LzU" id="zKl-TU-z4l"/>
+                            <outlet property="delegate" destination="DWx-kZ-LzU" id="9P2-h3-cPu"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Photos" id="oOH-OL-c5w"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableViewController" destination="DWx-kZ-LzU" id="Gb7-Ov-TcQ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PG7-fK-lpu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="DWx-kZ-LzU" customClass="CarsTableViewController">
+                    <connections>
+                        <outlet property="delegate" destination="WeU-uf-Zsp" id="9eH-ho-WZV"/>
+                        <outlet property="tableView" destination="JkI-PX-tR3" id="h8T-Yj-H1Z"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="1080" y="439"/>
         </scene>
