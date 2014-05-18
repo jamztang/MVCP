@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="UvV-3m-eLB">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Cars List View Controller - List-->
+        <scene sceneID="P8L-mQ-Rse">
+            <objects>
+                <tableViewController id="YCl-bj-8zd" customClass="CarsListViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="101" sectionHeaderHeight="22" sectionFooterHeight="22" id="PbD-Uz-OlY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="YCl-bj-8zd" id="qAQ-Lv-21S"/>
+                            <outlet property="delegate" destination="YCl-bj-8zd" id="erb-2h-pTb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="List" id="0bQ-F5-lwJ"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="view" destination="PbD-Uz-OlY" id="JOo-rW-nm9"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8L6-C2-2Wt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="-219"/>
+        </scene>
+        <!--Navigation Controller - List-->
+        <scene sceneID="fwS-qs-1O9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nUe-9y-oSB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="List" id="4bp-eX-Wxr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1kj-Hf-SDT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YCl-bj-8zd" kind="relationship" relationship="rootViewController" id="cix-cK-CbX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xrg-9w-aC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="685" y="-219"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="uUf-re-xqd">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="UvV-3m-eLB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="rOn-0M-8D7">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nUe-9y-oSB" kind="relationship" relationship="viewControllers" id="kkE-rV-JPa"/>
+                        <segue destination="YxJ-Mn-Vv9" kind="relationship" relationship="viewControllers" id="03k-Ec-LLz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Spz-Ua-wQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="439"/>
+        </scene>
+        <!--Cars Photo Table View Controller - Photos-->
+        <scene sceneID="jP6-aJ-nFB">
+            <objects>
+                <tableViewController storyboardIdentifier="baseCarsViewController" id="pk6-G3-5kR" customClass="CarsPhotoTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="22" sectionFooterHeight="22" id="gFn-6j-I5D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="pk6-G3-5kR" id="DZ6-lZ-Hg1"/>
+                            <outlet property="delegate" destination="pk6-G3-5kR" id="y09-rM-3rP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Photos" id="QEw-PO-cVI"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="view" destination="gFn-6j-I5D" id="dAM-Lb-etC"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQl-Kp-agH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="439"/>
+        </scene>
+        <!--Navigation Controller - Photos-->
+        <scene sceneID="xEU-Ys-iRa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YxJ-Mn-Vv9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Photos" id="Um0-1N-Dkz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PeO-0Y-4WE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pk6-G3-5kR" kind="relationship" relationship="rootViewController" id="nU2-2s-afJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddE-SD-VLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="685" y="439"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
