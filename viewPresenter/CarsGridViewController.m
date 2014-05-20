@@ -10,6 +10,7 @@
 #import "Car.h"
 #import "CarGridCell.h"
 #import "CarPresenter.h"
+#import "UICollectionView+PresenterNib.h"
 
 @interface CarsGridViewController () <UICollectionViewDelegateFlowLayout>
 
@@ -23,12 +24,25 @@
 {
     [super viewDidLoad];
 
-//    UINib *nib = [UINib nibWithNibName:@"CarGridCell" bundle:nil];
-//    [self.collectionView registerNib:nib forCellWithReuseIdentifier:@"cell"];
+    UINib *nib = [UINib nibWithNibName:@"CarGridCell" bundle:nil];
 
-    [self.collectionView registerClass:[CarPinterestCell class]
-            forCellWithReuseIdentifier:@"cell"];
+    [self.collectionView registerNib:nib
+                         targetClass:[CarGridCell class]
+                               index:0
+          forCellWithReuseIdentifier:@"cell0"];
 
+    [self.collectionView registerNib:nib
+                         targetClass:[CarGridCell class]
+                               index:1
+          forCellWithReuseIdentifier:@"cell1"];
+
+    [self.collectionView registerNib:nib
+                         targetClass:[CarGridCell class]
+                               index:2
+          forCellWithReuseIdentifier:@"cell2"];
+
+//    [self.collectionView registerClass:[CarPinterestCell class]
+//            forCellWithReuseIdentifier:@"cell"];
 
     self.cars = @[
                   [Car carWithYear:@(2014)
@@ -63,9 +77,9 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CarGridCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell"
-                                                                           forIndexPath:indexPath];
-
+    NSString *identifier = [NSString stringWithFormat:@"cell%lu", (long)indexPath.row];
+    CarGridCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier
+                                                                  forIndexPath:indexPath];
     cell.carPresenter.car = self.cars[indexPath.row];
     return cell;
 }

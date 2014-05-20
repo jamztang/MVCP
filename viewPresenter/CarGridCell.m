@@ -17,15 +17,6 @@
 @implementation CarPinterestCell
 
 - (id)initWithFrame:(CGRect)frame {
-//    self = [super initWithFrame:frame];
-//
-//    if (self) {
-//        CarGridCell *cell =
-//    }
-//
-//    return self;
-
-
     UINib *nib = [UINib nibWithNibName:@"CarGridCell" bundle:nil];
 
     NSArray *topLevelObjects = [nib instantiateWithOwner:nil options:nil];
@@ -38,7 +29,7 @@
             *stop = YES;
         }
     }];
-    return cell;
+    return (id)cell;
 }
 
 @end
