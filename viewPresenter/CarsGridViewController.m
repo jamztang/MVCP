@@ -1,27 +1,34 @@
 //
-//  CarsBaseTableViewController.m
+//  CarsGridViewController.m
 //  cells
 //
-//  Created by James Tang on 17/5/14.
+//  Created by James Tang on 18/5/14.
 //  Copyright (c) 2014 James Tang. All rights reserved.
 //
 
-#import "CarsPhotoTableViewController.h"
+#import "CarsGridViewController.h"
 #import "Car.h"
-#import "CarNibRegistrator.h"
+#import "CarGridCell.h"
 #import "CarPresenter.h"
-#import "CarTableViewCell.h"
 
-@interface CarsPhotoTableViewController ()
+@interface CarsGridViewController () <UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, copy) NSArray *cars;
 
 @end
 
-@implementation CarsPhotoTableViewController
+@implementation CarsGridViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+
+//    UINib *nib = [UINib nibWithNibName:@"CarGridCell" bundle:nil];
+//    [self.collectionView registerNib:nib forCellWithReuseIdentifier:@"cell"];
+
+    [self.collectionView registerClass:[CarPinterestCell class]
+            forCellWithReuseIdentifier:@"cell"];
+
 
     self.cars = @[
                   [Car carWithYear:@(2014)
@@ -43,51 +50,30 @@
                         imageNamed:@"tesla.jpg"
                    ],
                   ];
-
 }
 
-#pragma mark Helper
+#pragma mark UICollectionViewDataSource
 
-- (NSString *)identifierAtIndexPath:(NSIndexPath *)indexPath {
-    return @"photoCell";
-}
-
-#pragma mark UITableViewDatasource
-
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView
- numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return [self.cars count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView
-         cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CarGridCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell"
+                                                                           forIndexPath:indexPath];
 
-    NSString *identifier = [self identifierAtIndexPath:indexPath];
-
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-
-    if ( ! cell) {
-        cell = [[self.photoNibRegistrator.nib instantiateWithOwner:nil options:nil] firstObject];
-    }
-
-    [self configureCell:(id)cell forRowAtIndexPath:indexPath];
-
+    cell.carPresenter.car = self.cars[indexPath.row];
     return cell;
 }
 
-- (void)configureCell:(CarTableViewCell *)cell
-    forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    id object = self.cars[indexPath.row];
-    CarPresenter *presenter = cell.presenter;
-    presenter.car = object;
+#pragma mark UICollectionViewDelegateFlowLayout
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    return CGSizeMake(150, 241);
 }
 
 @end

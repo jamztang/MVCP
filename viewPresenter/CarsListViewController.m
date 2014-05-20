@@ -8,6 +8,9 @@
 
 #import "CarsListViewController.h"
 #import "Car.h"
+#import "CarNibRegistrator.h"
+#import "CarPresenter.h"
+#import "CarTableViewCell.h"
 
 @interface CarsListViewController ()
 
@@ -35,6 +38,50 @@
                    ],
                   ];
 
+}
+
+#pragma mark Helper
+
+- (NSString *)identifierAtIndexPath:(NSIndexPath *)indexPath {
+    return @"listCell";
+}
+
+#pragma mark UITableViewDatasource
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
+{
+    return [self.cars count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    NSString *identifier = [self identifierAtIndexPath:indexPath];
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+
+    if ( ! cell) {
+        cell = [[self.listCellNibRegistrator.nib instantiateWithOwner:nil options:nil] firstObject];
+    }
+
+    [self configureCell:(id)cell forRowAtIndexPath:indexPath];
+
+    return cell;
+}
+
+- (void)configureCell:(CarTableViewCell *)cell
+    forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    id object = self.cars[indexPath.row];
+    CarPresenter *presenter = cell.presenter;
+    presenter.car = object;
 }
 
 @end

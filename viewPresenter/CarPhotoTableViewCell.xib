@@ -41,9 +41,14 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="descLabel" destination="ZBQ-FW-iOi" id="LNI-Xv-dkZ"/>
-                <outlet property="frontImageView" destination="zgZ-Ln-hs1" id="UXY-S7-kMC"/>
+                <outlet property="presenter" destination="y9d-hQ-2Hc" id="Emk-zy-WNJ"/>
             </connections>
         </tableViewCell>
+        <customObject id="y9d-hQ-2Hc" customClass="CarPresenter">
+            <connections>
+                <outlet property="descLabel" destination="ZBQ-FW-iOi" id="i40-gZ-tge"/>
+                <outlet property="frontImageView" destination="zgZ-Ln-hs1" id="5RZ-Pk-8ka"/>
+            </connections>
+        </customObject>
     </objects>
 </document>

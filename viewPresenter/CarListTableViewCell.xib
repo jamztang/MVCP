@@ -70,11 +70,16 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="frontImageView" destination="ikV-pp-03m" id="I70-la-zmF"/>
-                <outlet property="makeLabel" destination="o7V-aS-rab" id="SDU-fz-saV"/>
-                <outlet property="modalLabel" destination="pw2-Xp-frz" id="luz-rD-xqX"/>
-                <outlet property="yearLabel" destination="vDy-ID-WUc" id="VZL-pI-sUd"/>
+                <outlet property="presenter" destination="9N3-eU-b5u" id="TLv-Hz-Ci2"/>
             </connections>
         </tableViewCell>
+        <customObject id="9N3-eU-b5u" customClass="CarPresenter">
+            <connections>
+                <outlet property="frontImageView" destination="ikV-pp-03m" id="OZC-Jt-6D2"/>
+                <outlet property="makeLabel" destination="o7V-aS-rab" id="EtK-TG-ud8"/>
+                <outlet property="modalLabel" destination="pw2-Xp-frz" id="Tg9-G7-FkN"/>
+                <outlet property="yearLabel" destination="vDy-ID-WUc" id="U41-MO-AlJ"/>
+            </connections>
+        </customObject>
     </objects>
 </document>

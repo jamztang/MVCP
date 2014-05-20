@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class CarNibRegistrator;
 @class CarsTableViewController;
 
 @interface CarsListViewController : UITableViewController
+@property (strong, nonatomic) IBOutlet CarNibRegistrator *listCellNibRegistrator;
 
 @end
