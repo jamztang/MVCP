@@ -1,30 +1,32 @@
 //
-//  UICollectionView+PresenterNib.m
+//  UITableView+Presenter.m
 //  cells
 //
-//  Created by James Tang on 20/5/14.
+//  Created by James Tang on 21/5/14.
 //  Copyright (c) 2014 James Tang. All rights reserved.
 //
 
-#import "UICollectionView+PresenterNib.h"
+#import "UITableView+Presenter.h"
 #import "NSObject+Subclass.h"
 
-@implementation UICollectionView (PresenterNib)
+@implementation UITableView (Presenter)
 
 - (void)registerNib:(UINib *)nib
-        targetClass:(Class)aClass
-              index:(NSUInteger)index
-forCellWithReuseIdentifier:(NSString *)identifier {
+       forCellClass:(Class)aClass
+            atIndex:(NSUInteger)index
+withReuseIdentifier:(NSString *)identifier {
 
-    NSString *className = [NSString stringWithFormat:@"%@-%lu", NSStringFromClass(aClass), (unsigned long)index];
+    NSString *nibName   = [nib valueForKeyPath:@"storage.bundleResourceName"];
+    NSString *className = [NSString stringWithFormat:@"%@-%@-%lu", NSStringFromClass(aClass), nibName, (unsigned long)index];
+
     __strong Class newClass = NSClassFromString(className);
 
     if ( ! newClass) {
         newClass =[aClass newSubclassNamed:className
                                  protocols:NULL
                                      impls:PAIR_LIST {
-                                         @selector(initWithFrame:),
-                                         BLOCK_CAST ^id (id frame) {
+                                         @selector(initWithStyle:reuseIdentifier:),
+                                         BLOCK_CAST ^id (UITableViewCellStyle style, NSString *reuseIdentifier) {
 
                                              NSArray *topLevelObjects = [nib instantiateWithOwner:nil options:nil];
 
@@ -46,9 +48,8 @@ forCellWithReuseIdentifier:(NSString *)identifier {
                                          NIL_PAIR
                                      }];
     }
-
-    [self registerClass:newClass forCellWithReuseIdentifier:identifier];
-
+    
+    [self registerClass:newClass forCellReuseIdentifier:identifier];
 }
 
 @end

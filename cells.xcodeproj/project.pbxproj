@@ -25,7 +25,8 @@
 		1A6418A11924BC40000E9F30 /* CarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C71251920E72E008CFDFF /* CarTableViewCell.m */; };
 		1A6418AB1924BDC7000E9F30 /* CarsPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6418AA1924BDC7000E9F30 /* CarsPhotoViewController.m */; };
 		1A8506D0192B77A5000F9129 /* NSObject+Subclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8506CF192B77A5000F9129 /* NSObject+Subclass.m */; };
-		1A8506D3192B77E9000F9129 /* UICollectionView+PresenterNib.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8506D2192B77E9000F9129 /* UICollectionView+PresenterNib.m */; };
+		1A8506D3192B77E9000F9129 /* UICollectionView+Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8506D2192B77E9000F9129 /* UICollectionView+Presenter.m */; };
+		1A8506D6192C2549000F9129 /* UITableView+Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8506D5192C2549000F9129 /* UITableView+Presenter.m */; };
 		1A883FE2192AF88200EA519C /* CarGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A883FE1192AF88200EA519C /* CarGridCell.m */; };
 		1A9C70EB1920E47A008CFDFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EA1920E47A008CFDFF /* Foundation.framework */; };
 		1A9C70ED1920E47A008CFDFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EC1920E47A008CFDFF /* CoreGraphics.framework */; };
@@ -104,8 +105,10 @@
 		1A6418AA1924BDC7000E9F30 /* CarsPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarsPhotoViewController.m; sourceTree = "<group>"; };
 		1A8506CE192B77A5000F9129 /* NSObject+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Subclass.h"; sourceTree = "<group>"; };
 		1A8506CF192B77A5000F9129 /* NSObject+Subclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Subclass.m"; sourceTree = "<group>"; };
-		1A8506D1192B77E9000F9129 /* UICollectionView+PresenterNib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+PresenterNib.h"; sourceTree = "<group>"; };
-		1A8506D2192B77E9000F9129 /* UICollectionView+PresenterNib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+PresenterNib.m"; sourceTree = "<group>"; };
+		1A8506D1192B77E9000F9129 /* UICollectionView+Presenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Presenter.h"; sourceTree = "<group>"; };
+		1A8506D2192B77E9000F9129 /* UICollectionView+Presenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Presenter.m"; sourceTree = "<group>"; };
+		1A8506D4192C2549000F9129 /* UITableView+Presenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Presenter.h"; sourceTree = "<group>"; };
+		1A8506D5192C2549000F9129 /* UITableView+Presenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Presenter.m"; sourceTree = "<group>"; };
 		1A883FE0192AF88200EA519C /* CarGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarGridCell.h; sourceTree = "<group>"; };
 		1A883FE1192AF88200EA519C /* CarGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarGridCell.m; sourceTree = "<group>"; };
 		1A9C70E71920E47A008CFDFF /* cells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cells.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -347,8 +350,10 @@
 				1AD4E77119287974000D7A49 /* CarsGridViewController.m */,
 				1A8506CE192B77A5000F9129 /* NSObject+Subclass.h */,
 				1A8506CF192B77A5000F9129 /* NSObject+Subclass.m */,
-				1A8506D1192B77E9000F9129 /* UICollectionView+PresenterNib.h */,
-				1A8506D2192B77E9000F9129 /* UICollectionView+PresenterNib.m */,
+				1A8506D4192C2549000F9129 /* UITableView+Presenter.h */,
+				1A8506D5192C2549000F9129 /* UITableView+Presenter.m */,
+				1A8506D1192B77E9000F9129 /* UICollectionView+Presenter.h */,
+				1A8506D2192B77E9000F9129 /* UICollectionView+Presenter.m */,
 			);
 			path = viewPresenter;
 			sourceTree = "<group>";
@@ -559,6 +564,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8506D6192C2549000F9129 /* UITableView+Presenter.m in Sources */,
 				1AD4E71119286C8C000D7A49 /* ViewController.m in Sources */,
 				1AD4E77219287974000D7A49 /* CarsGridViewController.m in Sources */,
 				1AD4E76A19286FA9000D7A49 /* CarPresenter.m in Sources */,
@@ -566,7 +572,7 @@
 				1AD4E70B19286C8C000D7A49 /* AppDelegate.m in Sources */,
 				1AD4E73119286CC1000D7A49 /* CarsPhotoTableViewController.m in Sources */,
 				1AD4E76D192870FC000D7A49 /* CarNibRegistrator.m in Sources */,
-				1A8506D3192B77E9000F9129 /* UICollectionView+PresenterNib.m in Sources */,
+				1A8506D3192B77E9000F9129 /* UICollectionView+Presenter.m in Sources */,
 				1A883FE2192AF88200EA519C /* CarGridCell.m in Sources */,
 				1AD4E70719286C8C000D7A49 /* main.m in Sources */,
 				1AD4E775192879F6000D7A49 /* CarTableViewCell.m in Sources */,

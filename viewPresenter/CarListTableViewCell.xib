@@ -70,7 +70,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="presenter" destination="9N3-eU-b5u" id="TLv-Hz-Ci2"/>
+                <outlet property="presenter" destination="9N3-eU-b5u" id="Lec-sX-wD7"/>
             </connections>
         </tableViewCell>
         <customObject id="9N3-eU-b5u" customClass="CarPresenter">

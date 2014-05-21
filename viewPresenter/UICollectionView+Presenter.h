@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UICollectionView (PresenterNib)
+@interface UICollectionView (Presenter)
 
 - (void)registerNib:(UINib *)nib
-        targetClass:(Class)aClass
-              index:(NSUInteger)index
-forCellWithReuseIdentifier:(NSString *)identifier;
+        forCellClass:(Class)aClass
+              objectIndex:(NSUInteger)index
+withReuseIdentifier:(NSString *)identifier;
 
 @end

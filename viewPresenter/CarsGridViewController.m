@@ -10,7 +10,7 @@
 #import "Car.h"
 #import "CarGridCell.h"
 #import "CarPresenter.h"
-#import "UICollectionView+PresenterNib.h"
+#import "UICollectionView+Presenter.h"
 
 @interface CarsGridViewController () <UICollectionViewDelegateFlowLayout>
 
@@ -27,19 +27,19 @@
     UINib *nib = [UINib nibWithNibName:@"CarGridCell" bundle:nil];
 
     [self.collectionView registerNib:nib
-                         targetClass:[CarGridCell class]
-                               index:0
-          forCellWithReuseIdentifier:@"cell0"];
+                         forCellClass:[CarGridCell class]
+                               objectIndex:0
+          withReuseIdentifier:@"cell0"];
 
     [self.collectionView registerNib:nib
-                         targetClass:[CarGridCell class]
-                               index:1
-          forCellWithReuseIdentifier:@"cell1"];
+                         forCellClass:[CarGridCell class]
+                               objectIndex:1
+          withReuseIdentifier:@"cell1"];
 
     [self.collectionView registerNib:nib
-                         targetClass:[CarGridCell class]
-                               index:2
-          forCellWithReuseIdentifier:@"cell2"];
+                         forCellClass:[CarGridCell class]
+                               objectIndex:2
+          withReuseIdentifier:@"cell2"];
 
 //    [self.collectionView registerClass:[CarPinterestCell class]
 //            forCellWithReuseIdentifier:@"cell"];

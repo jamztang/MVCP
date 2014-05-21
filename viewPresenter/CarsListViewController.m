@@ -11,6 +11,7 @@
 #import "CarNibRegistrator.h"
 #import "CarPresenter.h"
 #import "CarTableViewCell.h"
+#import "UITableView+Presenter.h"
 
 @interface CarsListViewController ()
 
@@ -22,6 +23,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    UINib *nib = [UINib nibWithNibName:@"CarListTableViewCell" bundle:nil];
+    [self.tableView registerNib:nib
+                   forCellClass:[CarTableViewCell class]
+                        atIndex:0
+            withReuseIdentifier:@"listCell"];
 
     self.cars = @[
                   [Car carWithYear:@(2014)
@@ -65,11 +72,7 @@
 
     NSString *identifier = [self identifierAtIndexPath:indexPath];
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-
-    if ( ! cell) {
-        cell = [[self.listCellNibRegistrator.nib instantiateWithOwner:nil options:nil] firstObject];
-    }
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
 
     [self configureCell:(id)cell forRowAtIndexPath:indexPath];
 

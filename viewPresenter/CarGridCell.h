@@ -12,7 +12,7 @@
 
 @interface CarGridCell : UICollectionViewCell
 
-@property (strong, nonatomic) IBOutlet CarPresenter *carPresenter;
+@property (weak, nonatomic) IBOutlet CarPresenter *carPresenter;
 
 @end
 
