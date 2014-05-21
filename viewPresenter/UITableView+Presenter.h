@@ -12,7 +12,11 @@
 
 - (void)registerNib:(UINib *)nib
        forCellClass:(Class)aClass
-            atIndex:(NSUInteger)index
 withReuseIdentifier:(NSString *)identifier;
+
+- (void)registerNib:(UINib *)nib
+       forCellClass:(Class)aClass
+     cellIdentifier:(NSString *)cellIdentifier  // identifier specified in nib
+withReuseIdentifier:(NSString *)reuseIdentifier;
 
 @end

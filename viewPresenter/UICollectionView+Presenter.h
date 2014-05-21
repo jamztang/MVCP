@@ -11,8 +11,12 @@
 @interface UICollectionView (Presenter)
 
 - (void)registerNib:(UINib *)nib
-        forCellClass:(Class)aClass
-              objectIndex:(NSUInteger)index
+       forCellClass:(Class)aClass
 withReuseIdentifier:(NSString *)identifier;
+
+- (void)registerNib:(UINib *)nib
+       forCellClass:(Class)aClass
+     cellIdentifier:(NSString *)cellIdentifier  // identifier specified in nib
+withReuseIdentifier:(NSString *)reuseIdentifier;
 
 @end

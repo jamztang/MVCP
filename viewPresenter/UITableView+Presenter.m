@@ -13,11 +13,19 @@
 
 - (void)registerNib:(UINib *)nib
        forCellClass:(Class)aClass
-            atIndex:(NSUInteger)index
+withReuseIdentifier:(NSString *)identifier {
+    [self registerNib:nib
+         forCellClass:aClass
+       cellIdentifier:identifier
+  withReuseIdentifier:identifier];
+}
+
+- (void)registerNib:(UINib *)nib
+       forCellClass:(Class)aClass
+     cellIdentifier:(NSString *)cellIdentifier
 withReuseIdentifier:(NSString *)identifier {
 
-    NSString *nibName   = [nib valueForKeyPath:@"storage.bundleResourceName"];
-    NSString *className = [NSString stringWithFormat:@"%@-%@-%lu", NSStringFromClass(aClass), nibName, (unsigned long)index];
+    NSString *className = [NSString stringWithFormat:@"%@-%@", NSStringFromClass(aClass), cellIdentifier];
 
     __strong Class newClass = NSClassFromString(className);
 
@@ -31,18 +39,19 @@ withReuseIdentifier:(NSString *)identifier {
                                              NSArray *topLevelObjects = [nib instantiateWithOwner:nil options:nil];
 
                                              __block id cell;
-                                             __block NSUInteger count = 0;
 
-                                             [topLevelObjects enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                                             [topLevelObjects enumerateObjectsUsingBlock:^(UITableViewCell *obj, NSUInteger idx, BOOL *stop) {
                                                  if ([obj isKindOfClass:aClass]) {
-                                                     if (count == index) {
+                                                     cell = obj; // forgiving to nibs that has only one cell without specifying identifiers
+                                                     if ([obj.reuseIdentifier isEqualToString:cellIdentifier]) {
                                                          cell = obj;
                                                          *stop = YES;
-                                                     } else {
-                                                         count++;
                                                      }
                                                  }
                                              }];
+
+                                             NSAssert2(cell != nil, @"%s: couldn't find a cell with identifier \"%@\" in the nib file.", __PRETTY_FUNCTION__, cellIdentifier);
+
                                              return cell;
                                          },
                                          NIL_PAIR

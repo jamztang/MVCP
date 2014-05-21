@@ -27,19 +27,19 @@
     UINib *nib = [UINib nibWithNibName:@"CarGridCell" bundle:nil];
 
     [self.collectionView registerNib:nib
-                         forCellClass:[CarGridCell class]
-                               objectIndex:0
-          withReuseIdentifier:@"cell0"];
+                        forCellClass:[CarGridCell class]
+                      cellIdentifier:@"waterfallCell"
+                 withReuseIdentifier:@"cell0"];
 
     [self.collectionView registerNib:nib
                          forCellClass:[CarGridCell class]
-                               objectIndex:1
-          withReuseIdentifier:@"cell1"];
+                      cellIdentifier:@"photoCell"
+                 withReuseIdentifier:@"cell1"];
 
     [self.collectionView registerNib:nib
-                         forCellClass:[CarGridCell class]
-                               objectIndex:2
-          withReuseIdentifier:@"cell2"];
+                        forCellClass:[CarGridCell class]
+                      cellIdentifier:@"listCell"
+                 withReuseIdentifier:@"cell2"];
 
 //    [self.collectionView registerClass:[CarPinterestCell class]
 //            forCellWithReuseIdentifier:@"cell"];

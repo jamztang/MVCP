@@ -27,7 +27,7 @@
     UINib *nib = [UINib nibWithNibName:@"CarPhotoTableViewCell" bundle:nil];
     [self.tableView registerNib:nib
                    forCellClass:[CarTableViewCell class]
-                        atIndex:0
+                 cellIdentifier:@"photoCell"
             withReuseIdentifier:@"photoCell"];
 
     self.cars = @[

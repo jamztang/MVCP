@@ -27,7 +27,7 @@
     UINib *nib = [UINib nibWithNibName:@"CarListTableViewCell" bundle:nil];
     [self.tableView registerNib:nib
                    forCellClass:[CarTableViewCell class]
-                        atIndex:0
+                 cellIdentifier:@"listCell"
             withReuseIdentifier:@"listCell"];
 
     self.cars = @[
