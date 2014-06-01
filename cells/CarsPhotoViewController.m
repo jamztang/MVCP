@@ -8,7 +8,7 @@
 
 #import "CarsPhotoViewController.h"
 #import "Car.h"
-#import "CarTableViewCell+Car.h"
+#import "CarPresenter.h"
 
 @interface CarsPhotoViewController ()
 

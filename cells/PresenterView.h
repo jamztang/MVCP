@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Presenter;
 
-@interface CarTitleView : UIView
+@interface PresenterView : UIView
+
+@property (strong, nonatomic) Presenter *presenter;
+
 
 @end
