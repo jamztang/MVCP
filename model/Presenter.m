@@ -10,4 +10,9 @@
 
 @implementation Presenter
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.hidden = YES;
+}
+
 @end
