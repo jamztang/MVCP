@@ -12,7 +12,7 @@
 		1A6418721924BBD3000E9F30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EA1920E47A008CFDFF /* Foundation.framework */; };
 		1A6418731924BBD3000E9F30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EC1920E47A008CFDFF /* CoreGraphics.framework */; };
 		1A6418741924BBD3000E9F30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EE1920E47A008CFDFF /* UIKit.framework */; };
-		1A6418A11924BC40000E9F30 /* CarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C71251920E72E008CFDFF /* CarTableViewCell.m */; };
+		1A6418A11924BC40000E9F30 /* CarListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C71251920E72E008CFDFF /* CarListViewCell.m */; };
 		1A6418AB1924BDC7000E9F30 /* CarsPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6418AA1924BDC7000E9F30 /* CarsPhotoViewController.m */; };
 		1A9C70EB1920E47A008CFDFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EA1920E47A008CFDFF /* Foundation.framework */; };
 		1A9C70ED1920E47A008CFDFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EC1920E47A008CFDFF /* CoreGraphics.framework */; };
@@ -23,7 +23,7 @@
 		1A9C70FE1920E47A008CFDFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C70FC1920E47A008CFDFF /* Main.storyboard */; };
 		1A9C71011920E47A008CFDFF /* CarsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C71001920E47A008CFDFF /* CarsListViewController.m */; };
 		1A9C71031920E47A008CFDFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71021920E47A008CFDFF /* Images.xcassets */; };
-		1A9C71261920E72E008CFDFF /* CarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C71251920E72E008CFDFF /* CarTableViewCell.m */; };
+		1A9C71261920E72E008CFDFF /* CarListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C71251920E72E008CFDFF /* CarListViewCell.m */; };
 		1A9C712A1920E8E9008CFDFF /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71281920E8E9008CFDFF /* tesla.jpg */; };
 		1A9C712B1920E8E9008CFDFF /* mini-cooper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71291920E8E9008CFDFF /* mini-cooper.jpg */; };
 		1AD4E6FD19286C8C000D7A49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EA1920E47A008CFDFF /* Foundation.framework */; };
@@ -33,8 +33,8 @@
 		1AD4E75A19286D1A000D7A49 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C71201920E4F4008CFDFF /* Car.m */; };
 		1AD4E75F19286D76000D7A49 /* libmodel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD4E73819286D10000D7A49 /* libmodel.a */; };
 		1AD4E76019286E12000D7A49 /* libmodel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD4E73819286D10000D7A49 /* libmodel.a */; };
-		1AD4E76119286E30000D7A49 /* CarTableViewCell+Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6418A61924BD66000E9F30 /* CarTableViewCell+Car.m */; };
-		1AD4E76219286E31000D7A49 /* CarTableViewCell+Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6418A61924BD66000E9F30 /* CarTableViewCell+Car.m */; };
+		1AD4E76119286E30000D7A49 /* CarListViewCell+Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6418A61924BD66000E9F30 /* CarListViewCell+Car.m */; };
+		1AD4E76219286E31000D7A49 /* CarListViewCell+Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6418A61924BD66000E9F30 /* CarListViewCell+Car.m */; };
 		1AD4E76319286E57000D7A49 /* libmodel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD4E73819286D10000D7A49 /* libmodel.a */; };
 		1AD4E77619287ADE000D7A49 /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71281920E8E9008CFDFF /* tesla.jpg */; };
 		1AD4E77719287ADE000D7A49 /* mini-cooper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71291920E8E9008CFDFF /* mini-cooper.jpg */; };
@@ -61,8 +61,8 @@
 
 /* Begin PBXFileReference section */
 		1A6418711924BBD3000E9F30 /* universalTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = universalTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A6418A51924BD66000E9F30 /* CarTableViewCell+Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CarTableViewCell+Car.h"; sourceTree = "<group>"; };
-		1A6418A61924BD66000E9F30 /* CarTableViewCell+Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CarTableViewCell+Car.m"; sourceTree = "<group>"; };
+		1A6418A51924BD66000E9F30 /* CarListViewCell+Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CarListViewCell+Car.h"; sourceTree = "<group>"; };
+		1A6418A61924BD66000E9F30 /* CarListViewCell+Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CarListViewCell+Car.m"; sourceTree = "<group>"; };
 		1A6418A91924BDC7000E9F30 /* CarsPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarsPhotoViewController.h; sourceTree = "<group>"; };
 		1A6418AA1924BDC7000E9F30 /* CarsPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarsPhotoViewController.m; sourceTree = "<group>"; };
 		1A9C70E71920E47A008CFDFF /* cells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cells.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,8 +82,8 @@
 		1A9C71091920E47A008CFDFF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1A9C711F1920E4F4008CFDFF /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Car.h; path = ../cells/Car.h; sourceTree = "<group>"; };
 		1A9C71201920E4F4008CFDFF /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Car.m; path = ../cells/Car.m; sourceTree = "<group>"; };
-		1A9C71241920E72E008CFDFF /* CarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarTableViewCell.h; sourceTree = "<group>"; };
-		1A9C71251920E72E008CFDFF /* CarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarTableViewCell.m; sourceTree = "<group>"; };
+		1A9C71241920E72E008CFDFF /* CarListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarListViewCell.h; sourceTree = "<group>"; };
+		1A9C71251920E72E008CFDFF /* CarListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarListViewCell.m; sourceTree = "<group>"; };
 		1A9C71281920E8E9008CFDFF /* tesla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tesla.jpg; sourceTree = "<group>"; };
 		1A9C71291920E8E9008CFDFF /* mini-cooper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mini-cooper.jpg"; sourceTree = "<group>"; };
 		1AD4E6FC19286C8C000D7A49 /* viewPresenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viewPresenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,10 +226,10 @@
 		1A9C71271920E734008CFDFF /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				1A9C71241920E72E008CFDFF /* CarTableViewCell.h */,
-				1A9C71251920E72E008CFDFF /* CarTableViewCell.m */,
-				1A6418A51924BD66000E9F30 /* CarTableViewCell+Car.h */,
-				1A6418A61924BD66000E9F30 /* CarTableViewCell+Car.m */,
+				1A9C71241920E72E008CFDFF /* CarListViewCell.h */,
+				1A9C71251920E72E008CFDFF /* CarListViewCell.m */,
+				1A6418A51924BD66000E9F30 /* CarListViewCell+Car.h */,
+				1A6418A61924BD66000E9F30 /* CarListViewCell+Car.m */,
 				1AF551CE193AF9E800ADD419 /* CarPhotoViewCell.h */,
 				1AF551CF193AF9E800ADD419 /* CarPhotoViewCell.m */,
 				1AF551D5193AFA1200ADD419 /* CarPhotoViewCell+Car.h */,
@@ -404,8 +404,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AD4E76119286E30000D7A49 /* CarTableViewCell+Car.m in Sources */,
-				1A6418A11924BC40000E9F30 /* CarTableViewCell.m in Sources */,
+				1AD4E76119286E30000D7A49 /* CarListViewCell+Car.m in Sources */,
+				1A6418A11924BC40000E9F30 /* CarListViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,9 +416,9 @@
 				1AF551E0193AFA5200ADD419 /* CarDescriptionCell.m in Sources */,
 				1AF551E4193AFA7400ADD419 /* CarHeaderView+Car.m in Sources */,
 				1AF551D1193AF9E800ADD419 /* CarPhotoViewCell.m in Sources */,
-				1A9C71261920E72E008CFDFF /* CarTableViewCell.m in Sources */,
+				1A9C71261920E72E008CFDFF /* CarListViewCell.m in Sources */,
 				1AF551D7193AFA1200ADD419 /* CarPhotoViewCell+Car.m in Sources */,
-				1AD4E76219286E31000D7A49 /* CarTableViewCell+Car.m in Sources */,
+				1AD4E76219286E31000D7A49 /* CarListViewCell+Car.m in Sources */,
 				1AF551DB193AFA3D00ADD419 /* CarHeaderView.m in Sources */,
 				1A6418AB1924BDC7000E9F30 /* CarsPhotoViewController.m in Sources */,
 				1A9C71011920E47A008CFDFF /* CarsListViewController.m in Sources */,

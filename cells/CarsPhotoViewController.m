@@ -56,12 +56,12 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"carPhotoCell"
                                                             forIndexPath:indexPath];
 
-    [self configureCell:(CarTableViewCell *)cell forRowAtIndexPath:indexPath];
+    [self configureCell:(CarListViewCell *)cell forRowAtIndexPath:indexPath];
 
     return cell;
 }
 
-- (void)configureCell:(CarTableViewCell *)cell
+- (void)configureCell:(CarListViewCell *)cell
     forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Car *car = self.cars[indexPath.row];

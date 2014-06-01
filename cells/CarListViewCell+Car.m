@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 James Tang. All rights reserved.
 //
 
-#import "CarTableViewCell+Car.h"
+#import "CarListViewCell+Car.h"
 #import "Car.h"
 
-@implementation CarTableViewCell (Car)
+@implementation CarListViewCell (Car)
 
 - (void)setCar:(Car *)car {
     self.yearLabel.text = [NSString stringWithFormat:@"%@", car.year];

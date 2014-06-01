@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 James Tang. All rights reserved.
 //
 
-#import "CarTableViewCell.h"
+#import "CarListViewCell.h"
 
-@implementation CarTableViewCell
+@implementation CarListViewCell
 
 @end

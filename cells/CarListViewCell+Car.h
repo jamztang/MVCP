@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 James Tang. All rights reserved.
 //
 
-#import "CarTableViewCell.h"
+#import "CarListViewCell.h"
 @class Car;
 
-@interface CarTableViewCell (Car)
+@interface CarListViewCell (Car)
 
 - (void)setCar:(Car *)car;
 

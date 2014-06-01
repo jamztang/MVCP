@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CarTableViewCell : UITableViewCell
+@interface CarListViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *yearLabel;
 @property (weak, nonatomic) IBOutlet UILabel *makeLabel;
