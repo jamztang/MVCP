@@ -37,6 +37,10 @@
 		1AF551CD193AF9BD00ADD419 /* CarDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF551CC193AF9BD00ADD419 /* CarDetailViewController.m */; };
 		1AF551EA193B021800ADD419 /* CarBaseViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF551E9193B021700ADD419 /* CarBaseViewCell.m */; };
 		1AF551ED193B022800ADD419 /* CarBaseViewCell+Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF551EC193B022800ADD419 /* CarBaseViewCell+Car.m */; };
+		1AF551F0193B053800ADD419 /* CarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF551EF193B053800ADD419 /* CarCollectionViewCell.m */; };
+		1AF551F3193B054400ADD419 /* CarCollectionViewCell+Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF551F2193B054400ADD419 /* CarCollectionViewCell+Car.m */; };
+		1AF551F6193B055700ADD419 /* CarTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF551F5193B055700ADD419 /* CarTitleView.m */; };
+		1AF551F9193B056600ADD419 /* CarTitleView+Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF551F8193B056600ADD419 /* CarTitleView+Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -83,6 +87,14 @@
 		1AF551E9193B021700ADD419 /* CarBaseViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarBaseViewCell.m; sourceTree = "<group>"; };
 		1AF551EB193B022800ADD419 /* CarBaseViewCell+Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CarBaseViewCell+Car.h"; sourceTree = "<group>"; };
 		1AF551EC193B022800ADD419 /* CarBaseViewCell+Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CarBaseViewCell+Car.m"; sourceTree = "<group>"; };
+		1AF551EE193B053800ADD419 /* CarCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarCollectionViewCell.h; sourceTree = "<group>"; };
+		1AF551EF193B053800ADD419 /* CarCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarCollectionViewCell.m; sourceTree = "<group>"; };
+		1AF551F1193B054400ADD419 /* CarCollectionViewCell+Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CarCollectionViewCell+Car.h"; sourceTree = "<group>"; };
+		1AF551F2193B054400ADD419 /* CarCollectionViewCell+Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CarCollectionViewCell+Car.m"; sourceTree = "<group>"; };
+		1AF551F4193B055700ADD419 /* CarTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarTitleView.h; sourceTree = "<group>"; };
+		1AF551F5193B055700ADD419 /* CarTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarTitleView.m; sourceTree = "<group>"; };
+		1AF551F7193B056600ADD419 /* CarTitleView+Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CarTitleView+Car.h"; sourceTree = "<group>"; };
+		1AF551F8193B056600ADD419 /* CarTitleView+Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CarTitleView+Car.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +222,14 @@
 				1AF551E9193B021700ADD419 /* CarBaseViewCell.m */,
 				1AF551EB193B022800ADD419 /* CarBaseViewCell+Car.h */,
 				1AF551EC193B022800ADD419 /* CarBaseViewCell+Car.m */,
+				1AF551EE193B053800ADD419 /* CarCollectionViewCell.h */,
+				1AF551EF193B053800ADD419 /* CarCollectionViewCell.m */,
+				1AF551F1193B054400ADD419 /* CarCollectionViewCell+Car.h */,
+				1AF551F2193B054400ADD419 /* CarCollectionViewCell+Car.m */,
+				1AF551F4193B055700ADD419 /* CarTitleView.h */,
+				1AF551F5193B055700ADD419 /* CarTitleView.m */,
+				1AF551F7193B056600ADD419 /* CarTitleView+Car.h */,
+				1AF551F8193B056600ADD419 /* CarTitleView+Car.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -381,11 +401,15 @@
 			files = (
 				1AF551ED193B022800ADD419 /* CarBaseViewCell+Car.m in Sources */,
 				1AF551EA193B021800ADD419 /* CarBaseViewCell.m in Sources */,
+				1AF551F6193B055700ADD419 /* CarTitleView.m in Sources */,
 				1A6418AB1924BDC7000E9F30 /* CarsPhotoViewController.m in Sources */,
 				1A9C71011920E47A008CFDFF /* CarsListViewController.m in Sources */,
 				1A9C70FB1920E47A008CFDFF /* AppDelegate.m in Sources */,
 				1A9C70F71920E47A008CFDFF /* main.m in Sources */,
+				1AF551F3193B054400ADD419 /* CarCollectionViewCell+Car.m in Sources */,
 				1AF551CD193AF9BD00ADD419 /* CarDetailViewController.m in Sources */,
+				1AF551F0193B053800ADD419 /* CarCollectionViewCell.m in Sources */,
+				1AF551F9193B056600ADD419 /* CarTitleView+Car.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
