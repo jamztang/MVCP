@@ -9,6 +9,8 @@
 #import "CarsPhotoViewController.h"
 #import "Car.h"
 #import "CarPresenter.h"
+#import "PresenterCollectionViewCell.h"
+#import "CarDetailViewController.h"
 
 @interface CarsPhotoViewController ()
 
@@ -17,6 +19,15 @@
 @end
 
 @implementation CarsPhotoViewController
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"carDetailScene"]) {
+        CarDetailViewController *controller = segue.destinationViewController;
+        NSIndexPath *indexPath = [[self.collectionView indexPathsForSelectedItems] firstObject];
+        Car *car = self.cars[indexPath.row];
+        controller.car = car;
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,35 +48,25 @@
                   ];
 }
 
+#pragma mark UICollectionViewDataSource
 
-#pragma mark - UITableViewDataSource
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView
- numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return [self.cars count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView
-         cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"carPhotoCell"
-                                                            forIndexPath:indexPath];
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    PresenterCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell"
+                                                                                  forIndexPath:indexPath];
 
-    [self configureCell:(CarListViewCell *)cell forRowAtIndexPath:indexPath];
-
+    [self configureCell:cell forRowAtIndexPath:indexPath];
     return cell;
 }
 
-- (void)configureCell:(CarListViewCell *)cell
+- (void)configureCell:(PresenterCollectionViewCell *)cell
     forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Car *car = self.cars[indexPath.row];
-    cell.car = car;
+    cell.presenter.model = car;
 }
 
 @end

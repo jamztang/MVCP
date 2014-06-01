@@ -11,6 +11,6 @@
 
 @interface PresenterTableViewCell : UITableViewCell
 
-@property (strong, nonatomic) Presenter *presenter;
+@property (strong, nonatomic) IBOutlet Presenter *presenter;
 
 @end

@@ -211,10 +211,10 @@
 		1A9C71231920E5F3008CFDFF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1A6418A91924BDC7000E9F30 /* CarsPhotoViewController.h */,
-				1A6418AA1924BDC7000E9F30 /* CarsPhotoViewController.m */,
 				1A9C70FF1920E47A008CFDFF /* CarsListViewController.h */,
 				1A9C71001920E47A008CFDFF /* CarsListViewController.m */,
+				1A6418A91924BDC7000E9F30 /* CarsPhotoViewController.h */,
+				1A6418AA1924BDC7000E9F30 /* CarsPhotoViewController.m */,
 				1AF551CB193AF9BD00ADD419 /* CarDetailViewController.h */,
 				1AF551CC193AF9BD00ADD419 /* CarDetailViewController.m */,
 			);

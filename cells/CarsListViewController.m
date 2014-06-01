@@ -8,7 +8,9 @@
 
 #import "CarsListViewController.h"
 #import "Car.h"
-#import "CarListViewCell.h"
+#import "PresenterTableViewCell.h"
+#import "CarPresenter.h"
+#import "CarDetailViewController.h"
 
 @interface CarsListViewController ()
 
@@ -17,6 +19,15 @@
 @end
 
 @implementation CarsListViewController
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"carDetailScene"]) {
+        CarDetailViewController *controller = segue.destinationViewController;
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Car *car = self.cars[indexPath.row];
+        controller.car = car;
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -56,21 +67,16 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"carListCell"
                                                             forIndexPath:indexPath];
 
-    [self configureCell:(CarListViewCell *)cell forRowAtIndexPath:indexPath];
+    [self configureCell:(PresenterTableViewCell *)cell forRowAtIndexPath:indexPath];
 
     return cell;
 }
 
-- (void)configureCell:(CarListViewCell *)cell
+- (void)configureCell:(PresenterTableViewCell *)cell
     forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Car *car = self.cars[indexPath.row];
-
-    cell.yearLabel.text = [NSString stringWithFormat:@"%@", car.year];
-    cell.modalLabel.text = car.modal;
-    cell.makeLabel.text = car.make;
-    cell.descLabel.text = car.desc;
-    cell.frontImageView.image = [UIImage imageNamed:car.imageNamed];
+    cell.presenter.model = car;
 }
 
 @end

@@ -11,7 +11,7 @@
 
 @interface PresenterView : UIView
 
-@property (strong, nonatomic) Presenter *presenter;
+@property (strong, nonatomic) IBOutlet Presenter *presenter;
 
 
 @end

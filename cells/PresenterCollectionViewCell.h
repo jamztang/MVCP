@@ -5,8 +5,8 @@
 #import <UIKit/UIKit.h>
 @class Presenter;
 
-@interface PresenterCollectionViewCell : UIView
+@interface PresenterCollectionViewCell : UICollectionViewCell
 
-@property (strong, nonatomic) Presenter *presenter;
+@property (strong, nonatomic) IBOutlet Presenter *presenter;
 
 @end

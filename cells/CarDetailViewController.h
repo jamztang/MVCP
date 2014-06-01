@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Car;
 
 @interface CarDetailViewController : UITableViewController
+
+@property (strong, nonatomic) Car *car;
 
 @end

@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="carListCell" id="plV-sy-bNX" customClass="CarBaseViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="carListCell" id="plV-sy-bNX" customClass="PresenterTableViewCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="101"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="plV-sy-bNX" id="zAo-ze-aqV">
@@ -28,7 +28,7 @@
                                             </constraints>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car.png" translatesAutoresizingMaskIntoConstraints="NO" id="baT-lY-z3o" customClass="CarPresenter">
-                                            <rect key="frame" x="5" y="4" width="28" height="28"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <connections>
                                                 <outlet property="frontImageView" destination="bql-wU-Zpo" id="KXW-R6-ZVM"/>
@@ -87,10 +87,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="frontImageView" destination="bql-wU-Zpo" id="sEb-ci-j52"/>
-                                    <outlet property="makeLabel" destination="wtI-rr-qxy" id="HQg-wJ-LvB"/>
-                                    <outlet property="modalLabel" destination="F6b-Va-P30" id="fbT-2c-l9f"/>
-                                    <outlet property="yearLabel" destination="AT6-9b-Cz9" id="ztd-Dg-KJG"/>
+                                    <outlet property="presenter" destination="baT-lY-z3o" id="2hc-1O-vF8"/>
                                     <segue destination="ccY-eB-kwK" kind="push" identifier="carDetailScene" id="BWY-eT-H3J"/>
                                 </connections>
                             </tableViewCell>
@@ -100,13 +97,12 @@
                             <outlet property="delegate" destination="hUW-s8-mwp" id="RS7-m8-XDf"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="xCd-L9-wOG"/>
                     <navigationItem key="navigationItem" title="List" id="VCh-hy-2C2"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="flP-Ro-Z25" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730" y="-197"/>
+            <point key="canvasLocation" x="1256" y="-197"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vb7-yJ-s7s">
@@ -119,57 +115,60 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="hUW-s8-mwp" kind="relationship" relationship="viewControllers" id="FuW-06-j8H"/>
-                        <segue destination="JCg-LV-gFl" kind="relationship" relationship="viewControllers" id="s7S-oh-L2g"/>
+                        <segue destination="4hO-zq-s1b" kind="relationship" relationship="viewControllers" id="FuW-06-j8H"/>
+                        <segue destination="9u8-Dp-U1E" kind="relationship" relationship="viewControllers" id="s7S-oh-L2g"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jmm-LU-pHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="254" y="148"/>
         </scene>
-        <!--Collection View Controller - Photos-->
+        <!--Cars Photo View Controller - Photos-->
         <scene sceneID="6JN-Qe-iRf">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="JCg-LV-gFl" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="1YP-nI-7QH">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="JCg-LV-gFl" customClass="CarsPhotoViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="1YP-nI-7QH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wkf-0n-jTg">
+                        <color key="backgroundColor" white="0.90174437830687826" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="6" id="wkf-0n-jTg">
                             <size key="itemSize" width="151" height="173"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="6" minY="6" maxX="6" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qb0-Sm-iTu" customClass="CarCollectionViewCell">
-                                <rect key="frame" x="0.0" y="64" width="151" height="173"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="qb0-Sm-iTu" customClass="PresenterCollectionViewCell">
+                                <rect key="frame" x="6" y="70" width="151" height="173"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="151" height="173"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pl6-2S-TSL">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pl6-2S-TSL">
                                             <rect key="frame" x="0.0" y="0.0" width="151" height="137"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="137" id="1CU-Z4-cHK"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Make" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIj-gd-Ytk">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIj-gd-Ytk">
                                             <rect key="frame" x="8" y="145" width="43" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Model" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAu-zn-VYG">
-                                            <rect key="frame" x="59" y="145" width="48" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAu-zn-VYG">
+                                            <rect key="frame" x="56" y="145" width="48" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car.png" translatesAutoresizingMaskIntoConstraints="NO" id="GUl-uS-Aey" customClass="CarPresenter">
-                                            <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <connections>
                                                 <outlet property="frontImageView" destination="Pl6-2S-TSL" id="w6p-Tf-23Z"/>
@@ -180,7 +179,18 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="fIj-gd-Ytk" firstAttribute="leading" secondItem="qb0-Sm-iTu" secondAttribute="leading" constant="8" id="7Yf-yb-aMO"/>
+                                    <constraint firstItem="Pl6-2S-TSL" firstAttribute="top" secondItem="qb0-Sm-iTu" secondAttribute="top" id="7pf-th-l6y"/>
+                                    <constraint firstAttribute="bottom" secondItem="fIj-gd-Ytk" secondAttribute="bottom" constant="7" id="CBS-RT-VOZ"/>
+                                    <constraint firstItem="jAu-zn-VYG" firstAttribute="top" secondItem="Pl6-2S-TSL" secondAttribute="bottom" constant="8" id="Isu-PI-3A6"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pl6-2S-TSL" secondAttribute="trailing" id="MVo-a4-TUR"/>
+                                    <constraint firstItem="jAu-zn-VYG" firstAttribute="leading" secondItem="fIj-gd-Ytk" secondAttribute="trailing" constant="5" id="Vvl-Pr-Oo7"/>
+                                    <constraint firstItem="Pl6-2S-TSL" firstAttribute="leading" secondItem="qb0-Sm-iTu" secondAttribute="leading" id="vwd-if-BSG"/>
+                                </constraints>
                                 <connections>
+                                    <outlet property="presenter" destination="GUl-uS-Aey" id="52Y-H6-fjq"/>
                                     <segue destination="ccY-eB-kwK" kind="push" id="e9F-In-Xgu"/>
                                 </connections>
                             </collectionViewCell>
@@ -190,24 +200,23 @@
                             <outlet property="delegate" destination="JCg-LV-gFl" id="xYr-Lb-SVM"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="9Uw-yx-HAa"/>
                     <navigationItem key="navigationItem" title="Photos" id="6oH-DO-1qm"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JcA-wg-r87" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730" y="504"/>
+            <point key="canvasLocation" x="1256" y="504"/>
         </scene>
-        <!--Car Detail Table View Controller-->
+        <!--Car Detail View Controller-->
         <scene sceneID="wly-Jw-cxK">
             <objects>
-                <tableViewController id="ccY-eB-kwK" customClass="CarDetailTableViewController" sceneMemberID="viewController">
+                <tableViewController id="ccY-eB-kwK" customClass="CarDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="313" sectionHeaderHeight="22" sectionFooterHeight="22" id="qAy-fb-AXH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="carPhotoCell" rowHeight="198" id="bQX-PX-gBB" customClass="CarBaseViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="carPhotoCell" rowHeight="198" id="bQX-PX-gBB" customClass="PresenterTableViewCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="198"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bQX-PX-gBB" id="Npa-6y-zzQ">
@@ -220,7 +229,7 @@
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car.png" translatesAutoresizingMaskIntoConstraints="NO" id="SgP-uh-XfG" customClass="CarPresenter">
-                                            <rect key="frame" x="235" y="6" width="20" height="20"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <connections>
                                                 <outlet property="frontImageView" destination="Is3-De-r7d" id="zjc-C4-M1C"/>
@@ -234,10 +243,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="frontImageView" destination="Is3-De-r7d" id="cBi-sm-deX"/>
+                                    <outlet property="presenter" destination="SgP-uh-XfG" id="4cz-cv-Mu5"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="carDescCell" rowHeight="120" id="2U7-O0-ant" customClass="CarBaseViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="carDescCell" rowHeight="120" id="2U7-O0-ant" customClass="PresenterTableViewCell">
                                 <rect key="frame" x="0.0" y="284" width="320" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2U7-O0-ant" id="ZXr-XV-0uS">
@@ -275,7 +284,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="descLabel" destination="Sfo-48-tKa" id="Kp4-ka-gBf"/>
+                                    <outlet property="presenter" destination="aWP-IX-LHQ" id="aaH-Ef-zqf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -286,7 +295,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="PE8-jg-l1x">
                         <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="k5N-Z7-4mA" customClass="CarTitleView">
+                        <view key="titleView" contentMode="scaleToFill" id="k5N-Z7-4mA" customClass="PresenterView">
                             <rect key="frame" x="80" y="0.0" width="160" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -327,13 +336,54 @@
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="presenter" destination="B7z-zu-z3z" id="Hcw-qf-slA"/>
+                            </connections>
                         </view>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ee9-GY-ovP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1173" y="504"/>
+            <point key="canvasLocation" x="1699" y="504"/>
+        </scene>
+        <!--Navigation Controller - Photos-->
+        <scene sceneID="JCh-xo-oAr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9u8-Dp-U1E" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Photos" id="9Uw-yx-HAa"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mb1-qS-xuo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JCg-LV-gFl" kind="relationship" relationship="rootViewController" id="wmK-HB-Zfb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M2E-gG-f0X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730" y="504"/>
+        </scene>
+        <!--Navigation Controller - List-->
+        <scene sceneID="yVr-Es-Nbm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4hO-zq-s1b" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="List" id="xCd-L9-wOG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LdO-p2-PdQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hUW-s8-mwp" kind="relationship" relationship="rootViewController" id="Vek-db-0f4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Pt-YH-AVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730" y="-197"/>
         </scene>
     </scenes>
     <resources>
@@ -345,6 +395,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="BWY-eT-H3J"/>
+        <segue reference="e9F-In-Xgu"/>
     </inferredMetricsTieBreakers>
 </document>
