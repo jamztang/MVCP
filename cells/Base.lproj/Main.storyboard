@@ -191,7 +191,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="presenter" destination="GUl-uS-Aey" id="52Y-H6-fjq"/>
-                                    <segue destination="ccY-eB-kwK" kind="push" id="e9F-In-Xgu"/>
+                                    <segue destination="ccY-eB-kwK" kind="push" identifier="carDetailScene" id="e9F-In-Xgu"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -223,7 +223,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="197"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Is3-De-r7d">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Is3-De-r7d">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="197"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -236,11 +236,6 @@
                                             </connections>
                                         </imageView>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Is3-De-r7d" firstAttribute="top" secondItem="Npa-6y-zzQ" secondAttribute="top" id="8zr-n2-Uet"/>
-                                        <constraint firstAttribute="trailing" secondItem="Is3-De-r7d" secondAttribute="trailing" id="MF6-B0-r17"/>
-                                        <constraint firstItem="Is3-De-r7d" firstAttribute="leading" secondItem="Npa-6y-zzQ" secondAttribute="leading" id="Ry9-GG-Now"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="presenter" destination="SgP-uh-XfG" id="4cz-cv-Mu5"/>
@@ -296,18 +291,18 @@
                     <navigationItem key="navigationItem" id="PE8-jg-l1x">
                         <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" id="k5N-Z7-4mA" customClass="PresenterView">
-                            <rect key="frame" x="80" y="0.0" width="160" height="44"/>
+                            <rect key="frame" x="75" y="0.0" width="170" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Make" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIM-KY-pk1">
-                                    <rect key="frame" x="50" y="5" width="43" height="21"/>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIM-KY-pk1">
+                                    <rect key="frame" x="50" y="4" width="43" height="21"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Model" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQ7-T7-tzV">
-                                    <rect key="frame" x="97" y="5" width="48" height="21"/>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQ7-T7-tzV">
+                                    <rect key="frame" x="97" y="4" width="48" height="21"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -320,9 +315,17 @@
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p3V-wz-EVW">
-                                    <rect key="frame" x="0.0" y="2" width="42" height="42"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p3V-wz-EVW">
+                                    <rect key="frame" x="0.0" y="1" width="42" height="42"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="42" id="uMR-am-jOe"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="21"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car.png" translatesAutoresizingMaskIntoConstraints="NO" id="B7z-zu-z3z" customClass="CarPresenter">
                                     <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -335,13 +338,25 @@
                                     </connections>
                                 </imageView>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="AIM-KY-pk1" firstAttribute="leading" secondItem="k5N-Z7-4mA" secondAttribute="leading" constant="50" id="2dt-kp-DfL"/>
+                                <constraint firstItem="p3V-wz-EVW" firstAttribute="top" secondItem="k5N-Z7-4mA" secondAttribute="top" constant="1" id="F5M-90-xVf"/>
+                                <constraint firstAttribute="bottom" secondItem="p3V-wz-EVW" secondAttribute="bottom" constant="1" id="RI9-xd-RHu"/>
+                                <constraint firstItem="EQ7-T7-tzV" firstAttribute="top" secondItem="k5N-Z7-4mA" secondAttribute="top" constant="4" id="Z6V-zc-5zv"/>
+                                <constraint firstItem="p3V-wz-EVW" firstAttribute="leading" secondItem="k5N-Z7-4mA" secondAttribute="leading" id="bBt-Me-wBV"/>
+                                <constraint firstItem="EQ7-T7-tzV" firstAttribute="leading" secondItem="AIM-KY-pk1" secondAttribute="trailing" constant="4" id="uJP-Qe-5uJ"/>
+                                <constraint firstItem="AIM-KY-pk1" firstAttribute="top" secondItem="k5N-Z7-4mA" secondAttribute="top" constant="4" id="yMi-Tl-WDd"/>
+                            </constraints>
                             <connections>
                                 <outlet property="presenter" destination="B7z-zu-z3z" id="Hcw-qf-slA"/>
                             </connections>
                         </view>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="titleView" destination="k5N-Z7-4mA" id="fWt-vS-RvF"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ee9-GY-ovP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
