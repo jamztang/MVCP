@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A14F78C19273CD30050422D /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71281920E8E9008CFDFF /* tesla.jpg */; };
-		1A14F78D19273CD30050422D /* mini-cooper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71291920E8E9008CFDFF /* mini-cooper.jpg */; };
-		1A6418721924BBD3000E9F30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EA1920E47A008CFDFF /* Foundation.framework */; };
-		1A6418731924BBD3000E9F30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EC1920E47A008CFDFF /* CoreGraphics.framework */; };
-		1A6418741924BBD3000E9F30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EE1920E47A008CFDFF /* UIKit.framework */; };
 		1A6418AB1924BDC7000E9F30 /* CarsPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6418AA1924BDC7000E9F30 /* CarsPhotoViewController.m */; };
 		1A9C70EB1920E47A008CFDFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EA1920E47A008CFDFF /* Foundation.framework */; };
 		1A9C70ED1920E47A008CFDFF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EC1920E47A008CFDFF /* CoreGraphics.framework */; };
@@ -24,16 +19,7 @@
 		1A9C71031920E47A008CFDFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71021920E47A008CFDFF /* Images.xcassets */; };
 		1A9C712A1920E8E9008CFDFF /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71281920E8E9008CFDFF /* tesla.jpg */; };
 		1A9C712B1920E8E9008CFDFF /* mini-cooper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71291920E8E9008CFDFF /* mini-cooper.jpg */; };
-		1AD4E6FD19286C8C000D7A49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EA1920E47A008CFDFF /* Foundation.framework */; };
-		1AD4E6FE19286C8C000D7A49 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EC1920E47A008CFDFF /* CoreGraphics.framework */; };
-		1AD4E6FF19286C8C000D7A49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EE1920E47A008CFDFF /* UIKit.framework */; };
-		1AD4E73919286D10000D7A49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9C70EA1920E47A008CFDFF /* Foundation.framework */; };
-		1AD4E75A19286D1A000D7A49 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C71201920E4F4008CFDFF /* Car.m */; };
-		1AD4E75F19286D76000D7A49 /* libmodel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD4E73819286D10000D7A49 /* libmodel.a */; };
-		1AD4E76019286E12000D7A49 /* libmodel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD4E73819286D10000D7A49 /* libmodel.a */; };
-		1AD4E76319286E57000D7A49 /* libmodel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD4E73819286D10000D7A49 /* libmodel.a */; };
-		1AD4E77619287ADE000D7A49 /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71281920E8E9008CFDFF /* tesla.jpg */; };
-		1AD4E77719287ADE000D7A49 /* mini-cooper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C71291920E8E9008CFDFF /* mini-cooper.jpg */; };
+		1AA3970A193B5A79007DE277 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C71201920E4F4008CFDFF /* Car.m */; };
 		1AF551CD193AF9BD00ADD419 /* CarDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF551CC193AF9BD00ADD419 /* CarDetailViewController.m */; };
 		1AF551EA193B021800ADD419 /* PresenterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF551E9193B021700ADD419 /* PresenterTableViewCell.m */; };
 		1AF551F0193B053800ADD419 /* PresenterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF551EF193B053800ADD419 /* PresenterCollectionViewCell.m */; };
@@ -45,20 +31,7 @@
 		1AF55209193B3BD700ADD419 /* UserPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF55208193B3BD700ADD419 /* UserPresenter.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		1AD4E73619286D10000D7A49 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		1A6418711924BBD3000E9F30 /* universalTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = universalTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6418A91924BDC7000E9F30 /* CarsPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarsPhotoViewController.h; sourceTree = "<group>"; };
 		1A6418AA1924BDC7000E9F30 /* CarsPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarsPhotoViewController.m; sourceTree = "<group>"; };
 		1A9C70E71920E47A008CFDFF /* cells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cells.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,8 +53,6 @@
 		1A9C71201920E4F4008CFDFF /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Car.m; path = ../cells/Car.m; sourceTree = "<group>"; };
 		1A9C71281920E8E9008CFDFF /* tesla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tesla.jpg; sourceTree = "<group>"; };
 		1A9C71291920E8E9008CFDFF /* mini-cooper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mini-cooper.jpg"; sourceTree = "<group>"; };
-		1AD4E6FC19286C8C000D7A49 /* viewPresenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viewPresenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AD4E73819286D10000D7A49 /* libmodel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmodel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD4E73C19286D10000D7A49 /* model-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "model-Prefix.pch"; sourceTree = "<group>"; };
 		1AF551CB193AF9BD00ADD419 /* CarDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarDetailViewController.h; sourceTree = "<group>"; };
 		1AF551CC193AF9BD00ADD419 /* CarDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarDetailViewController.m; sourceTree = "<group>"; };
@@ -103,44 +74,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1A64186E1924BBD3000E9F30 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1AD4E76019286E12000D7A49 /* libmodel.a in Frameworks */,
-				1A6418731924BBD3000E9F30 /* CoreGraphics.framework in Frameworks */,
-				1A6418741924BBD3000E9F30 /* UIKit.framework in Frameworks */,
-				1A6418721924BBD3000E9F30 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1A9C70E41920E47A008CFDFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AD4E75F19286D76000D7A49 /* libmodel.a in Frameworks */,
 				1A9C70ED1920E47A008CFDFF /* CoreGraphics.framework in Frameworks */,
 				1A9C70EF1920E47A008CFDFF /* UIKit.framework in Frameworks */,
 				1A9C70EB1920E47A008CFDFF /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1AD4E6F919286C8C000D7A49 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1AD4E76319286E57000D7A49 /* libmodel.a in Frameworks */,
-				1AD4E6FE19286C8C000D7A49 /* CoreGraphics.framework in Frameworks */,
-				1AD4E6FF19286C8C000D7A49 /* UIKit.framework in Frameworks */,
-				1AD4E6FD19286C8C000D7A49 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1AD4E73519286D10000D7A49 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1AD4E73919286D10000D7A49 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,9 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				1A9C70E71920E47A008CFDFF /* cells.app */,
-				1A6418711924BBD3000E9F30 /* universalTableView.app */,
-				1AD4E6FC19286C8C000D7A49 /* viewPresenter.app */,
-				1AD4E73819286D10000D7A49 /* libmodel.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,23 +210,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A6418701924BBD3000E9F30 /* universalTableView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A64189F1924BBD4000E9F30 /* Build configuration list for PBXNativeTarget "universalTableView" */;
-			buildPhases = (
-				1A64186D1924BBD3000E9F30 /* Sources */,
-				1A64186E1924BBD3000E9F30 /* Frameworks */,
-				1A64186F1924BBD3000E9F30 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = universalTableView;
-			productName = universalTableView;
-			productReference = 1A6418711924BBD3000E9F30 /* universalTableView.app */;
-			productType = "com.apple.product-type.application";
-		};
 		1A9C70E61920E47A008CFDFF /* cells */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A9C71191920E47A008CFDFF /* Build configuration list for PBXNativeTarget "cells" */;
@@ -306,40 +226,6 @@
 			productName = cells;
 			productReference = 1A9C70E71920E47A008CFDFF /* cells.app */;
 			productType = "com.apple.product-type.application";
-		};
-		1AD4E6FB19286C8C000D7A49 /* viewPresenter */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1AD4E72A19286C8C000D7A49 /* Build configuration list for PBXNativeTarget "viewPresenter" */;
-			buildPhases = (
-				1AD4E6F819286C8C000D7A49 /* Sources */,
-				1AD4E6F919286C8C000D7A49 /* Frameworks */,
-				1AD4E6FA19286C8C000D7A49 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = viewPresenter;
-			productName = viewPresenter;
-			productReference = 1AD4E6FC19286C8C000D7A49 /* viewPresenter.app */;
-			productType = "com.apple.product-type.application";
-		};
-		1AD4E73719286D10000D7A49 /* model */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1AD4E75419286D10000D7A49 /* Build configuration list for PBXNativeTarget "model" */;
-			buildPhases = (
-				1AD4E73419286D10000D7A49 /* Sources */,
-				1AD4E73519286D10000D7A49 /* Frameworks */,
-				1AD4E73619286D10000D7A49 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = model;
-			productName = model;
-			productReference = 1AD4E73819286D10000D7A49 /* libmodel.a */;
-			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -364,23 +250,11 @@
 			projectRoot = "";
 			targets = (
 				1A9C70E61920E47A008CFDFF /* cells */,
-				1A6418701924BBD3000E9F30 /* universalTableView */,
-				1AD4E6FB19286C8C000D7A49 /* viewPresenter */,
-				1AD4E73719286D10000D7A49 /* model */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1A64186F1924BBD3000E9F30 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A14F78C19273CD30050422D /* tesla.jpg in Resources */,
-				1A14F78D19273CD30050422D /* mini-cooper.jpg in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1A9C70E51920E47A008CFDFF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,25 +268,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1AD4E6FA19286C8C000D7A49 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1AD4E77719287ADE000D7A49 /* mini-cooper.jpg in Resources */,
-				1AD4E77619287ADE000D7A49 /* tesla.jpg in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1A64186D1924BBD3000E9F30 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1A9C70E31920E47A008CFDFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,6 +279,7 @@
 				1AF551EA193B021800ADD419 /* PresenterTableViewCell.m in Sources */,
 				1AF551F6193B055700ADD419 /* PresenterView.m in Sources */,
 				1A6418AB1924BDC7000E9F30 /* CarsPhotoViewController.m in Sources */,
+				1AA3970A193B5A79007DE277 /* Car.m in Sources */,
 				1A9C71011920E47A008CFDFF /* CarsListViewController.m in Sources */,
 				1A9C70FB1920E47A008CFDFF /* AppDelegate.m in Sources */,
 				1A9C70F71920E47A008CFDFF /* main.m in Sources */,
@@ -429,21 +288,6 @@
 				1AF55209193B3BD700ADD419 /* UserPresenter.m in Sources */,
 				1AF551CD193AF9BD00ADD419 /* CarDetailViewController.m in Sources */,
 				1AF551F0193B053800ADD419 /* PresenterCollectionViewCell.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1AD4E6F819286C8C000D7A49 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1AD4E73419286D10000D7A49 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1AD4E75A19286D1A000D7A49 /* Car.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,36 +313,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1A64189B1924BBD4000E9F30 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "universalTableView/universalTableView-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "universalTableView/universalTableView-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		1A64189C1924BBD4000E9F30 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "universalTableView/universalTableView-Prefix.pch";
-				INFOPLIST_FILE = "universalTableView/universalTableView-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 		1A9C71171920E47A008CFDFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -597,76 +411,9 @@
 			};
 			name = Release;
 		};
-		1AD4E72619286C8C000D7A49 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "viewPresenter/viewPresenter-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "viewPresenter/viewPresenter-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		1AD4E72719286C8C000D7A49 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "viewPresenter/viewPresenter-Prefix.pch";
-				INFOPLIST_FILE = "viewPresenter/viewPresenter-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		1AD4E75519286D10000D7A49 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/model.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "model/model-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		1AD4E75619286D10000D7A49 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/model.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "model/model-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A64189F1924BBD4000E9F30 /* Build configuration list for PBXNativeTarget "universalTableView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A64189B1924BBD4000E9F30 /* Debug */,
-				1A64189C1924BBD4000E9F30 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		1A9C70E21920E47A008CFDFF /* Build configuration list for PBXProject "cells" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -681,24 +428,6 @@
 			buildConfigurations = (
 				1A9C711A1920E47A008CFDFF /* Debug */,
 				1A9C711B1920E47A008CFDFF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1AD4E72A19286C8C000D7A49 /* Build configuration list for PBXNativeTarget "viewPresenter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1AD4E72619286C8C000D7A49 /* Debug */,
-				1AD4E72719286C8C000D7A49 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1AD4E75419286D10000D7A49 /* Build configuration list for PBXNativeTarget "model" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1AD4E75519286D10000D7A49 /* Debug */,
-				1AD4E75619286D10000D7A49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
