@@ -11,12 +11,7 @@
 
 @implementation CarPresenter
 
-- (void)setModel:(id)model {
-    [super setModel:model];
-    [self reloadData];
-}
-
-- (void)reloadData {
+- (void)reloadData{
     Car *car = self.model;
     self.yearLabel.text = [NSString stringWithFormat:@"%@", car.year];
     self.modalLabel.text = car.modal;

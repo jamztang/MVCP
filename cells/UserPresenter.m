@@ -11,11 +11,6 @@
 
 @implementation UserPresenter
 
-- (void)setModel:(id)model {
-    [super setModel:model];
-    [self reloadData];
-}
-
 - (void)reloadData {
     User *user = self.model;
     self.ageLabel.text = [NSString stringWithFormat:@"%@", user.age];
