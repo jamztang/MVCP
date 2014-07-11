@@ -15,4 +15,13 @@
     self.hidden = YES;
 }
 
+- (void)setModel:(id)model{
+    _model = model;
+    [self reloadData];
+}
+
+- (void)reloadData{
+    NSAssert(NO, @"This is an abstract method and should be overridden");
+}
+
 @end
